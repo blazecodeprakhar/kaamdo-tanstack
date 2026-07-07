@@ -1,7 +1,8 @@
 [build]
-  command = "NITRO_PRESET=netlify npm run build"
+  command = "npm run build"
   publish = ".output/public"
 
 [build.environment]
   NODE_VERSION = "20"
+  NITRO_PRESET = "netlify"
   NPM_FLAGS = "--legacy-peer-deps"
